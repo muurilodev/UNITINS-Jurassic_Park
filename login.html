@@ -3,14 +3,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login.html</title>
-    <img src="https://upload.wikimedia.org/wikipedia/pt/b/bc/Jurassic_Park_logo.png" alt="" width="400"><div></div>
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="Adm.html">
-        <label>Login</label><input type="email" placeholder="Escreva seu login"> 
-        <label>Senha</label><input type="password" placeholder="Escreva sua Senha"> 
-        <input type="submit" value="enter">
+    <div class="main-login">
+     <div class="left-login">
+      <h1>Faça login <br> e explore uma aventura dinossauro</h1>
+      <img src="dinossauro.svg" alt="dinossauro" width="600">
+    </div>
+    <div class="right-login">
+     <div class="card-login">
+     <h1>Login</h1>
+     <form action="Adm.html">
+        <div class="text-field">
+        <label for="usuario">Usuário</label>
+        <input type="text" name="usuario" placeholder="Usuário"> 
+        </div>
+        <div class="text-field">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" placeholder="Senha">
+        </div>
+     <button class="btn-login">Login</button>
     </form>
+  </div>
+ </div>
+</div>
 </body>
 </html>
