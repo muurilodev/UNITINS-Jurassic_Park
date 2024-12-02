@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurassic Park - Criador de Nome de Dinossauro</title>
+    <link rel="stylesheet" href="dinossauro.css">
+</head>
+<body>
+    <header>
+        <h1>Jurassic Park</h1>
+    </header>
+
+    <main>
+        <section id="criador-nome">
+            <h2>Criador de Nome de Dinossauro</h2>
+            <form id="form-nome-dinossauro">
+                <label for="primeira-silaba-nome">Primeira sílaba do nome:</label>
+                <input type="text" id="primeira-silaba-nome" name="primeira-silaba-nome" required>
+
+                <label for="ultima-silaba-nome">Última sílaba do nome:</label>
+                <input type="text" id="ultima-silaba-nome" name="ultima-silaba-nome" required>
+
+                <label for="primeira-silaba-sobrenome">Primeira sílaba do sobrenome:</label>
+                <input type="text" id="primeira-silaba-sobrenome" name="primeira-silaba-sobrenome" required>
+
+                <label for="ultima-silaba-sobrenome">Última sílaba do sobrenome:</label>
+                <input type="text" id="ultima-silaba-sobrenome" name="ultima-silaba-sobrenome" required>
+
+                <button type="button" onclick="gerarNome()">Gerar nome</button>
+            </form>
+
+            <p id="mensagem-erro" style="color: red; display: none;">Por favor, preencha todos os campos corretamente!</p>
+            <p id="nome-dinossauro" style="font-size: 20px; font-weight: bold;"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jurassic Park</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
